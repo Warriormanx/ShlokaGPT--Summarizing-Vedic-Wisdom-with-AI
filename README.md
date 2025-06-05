@@ -22,19 +22,24 @@ ShlokaGPT is an AI-powered Python tool that scrapes purports (spiritual commenta
 
 ---
 
-🧘 Use Cases
-📖 Quick understanding of Vedic scriptures
+## 🧘 Use Cases
 
-🧑‍🎓 Study aid for Sanskrit and Vedantic students
+- 📖 Quick understanding of Vedic scriptures
 
-📚 NLP research in low-resource spiritual languages
+- 🧑‍🎓 Study aid for Sanskrit and Vedantic students
 
-⚠️ Disclaimer
-Always refer to the full purports on Vedabase.io for complete context and spiritual integrity.
+- 📚 NLP research in low-resource spiritual languages
 
-🙏 Acknowledgments
-Vedabase.io – for hosting the sacred Bhāgavatam text
+---
 
-Facebook AI – for open-sourcing BART
+## ⚠️ Disclaimer
 
-HuggingFace – for democratizing NLP
+- Always refer to the full purports on Vedabase.io for complete context and spiritual integrity.
+---
+
+## 🙏 Acknowledgments
+- Vedabase.io – for hosting the sacred Bhāgavatam text
+
+- Facebook AI – for open-sourcing BART
+
+- HuggingFace – for democratizing NLP
