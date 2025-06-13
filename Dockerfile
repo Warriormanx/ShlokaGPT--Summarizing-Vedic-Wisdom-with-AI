@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir \
     beautifulsoup4 \
     torch \
     transformers \
-    notebook
+    jupyter
 
 COPY Vedic_Text_Summ.ipynb .
 
