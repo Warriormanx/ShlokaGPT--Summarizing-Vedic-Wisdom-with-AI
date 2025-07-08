@@ -37,6 +37,12 @@ ShlokaGPT is an AI-powered Python tool that scrapes purports (spiritual commenta
 
 ---
 
+## Chcek it out on docker
+```bash
+https://hub.docker.com/r/warriormanx/shlokagpt
+```
+---
+
 ## ⚠️ Disclaimer
 
 - Always refer to the full purports on Vedabase.io for complete context and spiritual integrity.
@@ -48,6 +54,8 @@ ShlokaGPT is an AI-powered Python tool that scrapes purports (spiritual commenta
 - Facebook AI – for open-sourcing BART
 
 - HuggingFace – for democratizing NLP
+
+  ---
 
 ## 🧠 Future Improvements
 - Add verse auto-suggestion
