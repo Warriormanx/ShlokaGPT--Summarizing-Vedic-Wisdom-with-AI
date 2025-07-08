@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+beautifulsoup4
+transformers
+torch
+requests
+pydantic
+streamlit
