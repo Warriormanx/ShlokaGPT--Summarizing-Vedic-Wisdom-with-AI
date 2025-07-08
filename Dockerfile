@@ -2,15 +2,19 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-RUN pip install --no-cache-dir \
-    requests \
-    beautifulsoup4 \
-    torch \
-    transformers \
-    jupyter
+# Install OS dependencies
+RUN apt-get update && apt-get install -y build-essential && rm -rf /var/lib/apt/lists/*
 
-COPY Vedic_Text_Summ.ipynb .
+# Install Python packages
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 8888
+# Copy all 
+COPY . .
 
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root", "--no-browser", "--NotebookApp.token=''", "--NotebookApp.password=''"]
+# Expose ports: FastAPI and Streamlit
+EXPOSE 8000
+EXPOSE 8501
+
+# Run both apps using a shell script
+CMD ["bash", "-c", "uvicorn main:app --host 0.0.0.0 --port 8000 & streamlit run frontend.py --server.address=0.0.0.0"]
