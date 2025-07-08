@@ -8,17 +8,22 @@ ShlokaGPT is an AI-powered Python tool that scrapes purports (spiritual commenta
 
 - 🔍 Scrapes purports from specific verse references (e.g., SB 2.2.2)
 - 🧠 Uses BART transformer model to generate concise summaries
-- 📜 Helps readers grasp deep spiritual insights quickly
-- ⛩️ Based on the revered Śrīmad-Bhāgavatam texts hosted on Vedabase.io
+- 📜FastAPI backend serves the summarization API
+- 🖥️ Streamlit frontend provides a user-friendly UI
+- 🐳 Dockerized: Easily run the full app in a single container
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python
-- `requests`, `beautifulsoup4` for web scraping
-- HuggingFace Transformers (`facebook/bart-large-cnn`)
-- PyTorch
+- **Python**
+- **FastAPI** – for backend API
+- **Streamlit** – for interactive UI
+- **BeautifulSoup4** – for HTML scraping from Vedabase
+- **HuggingFace Transformers** – to use `facebook/bart-large-cnn`
+- **PyTorch** – for model inference
+- **Docker** – for containerized deployment
+
 
 ---
 
@@ -43,3 +48,8 @@ ShlokaGPT is an AI-powered Python tool that scrapes purports (spiritual commenta
 - Facebook AI – for open-sourcing BART
 
 - HuggingFace – for democratizing NLP
+
+## 🧠 Future Improvements
+- Add verse auto-suggestion
+
+- Add audio narration of purports
